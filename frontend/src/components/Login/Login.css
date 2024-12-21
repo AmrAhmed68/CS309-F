@@ -1,0 +1,153 @@
+.Login-container {
+  width: 60%;
+  display: block;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Make it an absolutely positioned element */
+  margin-top: 30px;
+  margin-left: 20%;
+
+}
+
+.Login-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  margin-top: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #4B5F6C;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.Login-header p {
+  margin-top: 30px;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: #4B5F6C;
+  margin-bottom: 0;
+}
+
+.Login-header h1 {
+  width: 61px;
+  height: 6px;
+  background: #4B5F6C;
+  border-radius: 9px;
+  margin-top: 0px;
+}
+
+.Login-header span {
+  text-decoration: underline;
+}
+
+.Login-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.Login-input {
+  width: 75%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #4B5F6C;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.Login-input:hover {
+  border-color: #4B5F6C;
+  background-color: #fff;
+}
+
+.Login-input img,
+.Login-input svg {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #4B5F6C;
+}
+
+.Login-input input,
+.Login-input select {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 20px;
+  color: #000000;
+}
+
+.Login-input input::placeholder {
+  color: #bbb;
+}
+
+.Login-input select {
+  appearance: none;
+  color: #8d8787;
+}
+
+.error-message {
+  font-size: 0.9rem;
+  color: #ff4d4d;
+  margin: auto;
+  text-align: left;
+}
+
+.Login-submit {
+  background-color: #4B5F6C;
+  color: #fff;
+  width: 40%;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+}
+
+.Login-submit:hover {
+  background-color: #3A4B55;
+}
+
+@media screen and (max-width: 800px) {
+  .Login-container {
+    width: 90%; 
+    padding: 15px; 
+    margin-bottom: 30px ;
+    margin-left: 4%;
+
+  }
+
+  .Login-header p {
+    font-size: 1.5rem;
+  }
+
+  .Login-input {
+    padding: 8px;
+  }
+
+  .Login-submit {
+  background-color: #4B5F6C;
+  color: #fff;
+  padding: 15px;
+  width: 70%;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+  }
+}
